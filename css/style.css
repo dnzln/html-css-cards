@@ -218,7 +218,7 @@ a {
   .notification__notification-block {
     display: none;
     position: absolute;
-    min-width: 15rem;
+    min-width: 25rem;
     top: 2.2rem;
     right: 0;
     padding: 1rem 1.6rem;
