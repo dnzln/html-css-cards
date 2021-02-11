@@ -12,6 +12,7 @@
     width: 100%;
     backface-visibility: hidden;
     transition: all 0.5s ease;
+    transition-property: height, width, font-size, transform;
     background-color: #fff;
 
     &_front {

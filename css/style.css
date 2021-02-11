@@ -248,6 +248,7 @@ a {
     width: 100%;
     backface-visibility: hidden;
     transition: all 0.5s ease;
+    transition-property: height, width, font-size, transform;
     background-color: #fff; }
     .card__side_front {
       display: flex;
@@ -410,10 +411,10 @@ a {
     font-weight: 700; }
   .notice_type_error {
     background-color: #b93c34cf;
-    background-image: url(../../img/error.svg); }
+    background-image: url(../img/error.svg); }
   .notice_type_success {
     background-color: #60ad5fc7;
-    background-image: url(../../img/success.svg); }
+    background-image: url(../img/success.svg); }
 
 .u-hidden {
   display: none; }
