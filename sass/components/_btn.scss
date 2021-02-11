@@ -1,0 +1,14 @@
+.btn {
+  background-color: $btn-join-main-color;
+  width: 10rem;
+  color: #fff;
+  border: none;
+  padding: 1.2rem;
+  border-radius: 3px;
+  font-size: 1.6rem;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $btn-join-hover-color;
+  }
+}

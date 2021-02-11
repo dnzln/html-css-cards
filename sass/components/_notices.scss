@@ -1,0 +1,35 @@
+.notices {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.notice {
+  width: 22rem;
+  margin: 1.6rem;
+  padding: 2rem;
+  padding-left: 6rem;
+  border-radius: 3px;
+
+  font-family: Arial, sans-serif;
+  font-size: 1.3rem;
+  color: #ffffff;
+
+  background-repeat: no-repeat;
+  background-position: center left 2rem;
+  background-size: 2rem;
+
+  &__title {
+    font-weight: 700;
+  }
+
+  &_type_error {
+    background-color: $notif-error-color;
+    background-image: url(../../img/error.svg);
+  }
+
+  &_type_success {
+    background-color: $notif-success-color;
+    background-image: url(../../img/success.svg);
+  }
+}

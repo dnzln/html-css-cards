@@ -1,0 +1,10 @@
+.cards-section {
+  margin-top: calc(#{$header-height} * 2);
+  height: calc(100vh - #{$header-height} * 2);
+
+  &-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+}

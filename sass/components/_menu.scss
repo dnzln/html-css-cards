@@ -1,0 +1,69 @@
+.menu {
+  position: relative;
+
+  &__profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: $profile-color;
+    border-radius: 50%;
+
+    &:hover {
+      cursor: pointer;
+      background-color: darken($profile-color, 8);
+    }
+  }
+
+  &__profile-name {
+    display: block;
+    font-size: 0;
+    color: transparent;
+
+    &::first-letter {
+      font-size: 2rem;
+      color: #fff;
+    }
+  }
+
+  &__menu-block {
+    display: none;
+    position: absolute;
+    min-width: 15rem;
+    top: 4.3rem;
+    right: 0;
+    padding: 1rem 1.6rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 2rem rgba(#000, 0.1);
+  }
+
+  .menu-toggle:checked ~ .menu__menu-block {
+    display: block;
+  }
+
+  &__user-name {
+    display: block;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #000;
+    font-size: 1.3rem;
+    color: #a7a4a4b6;
+  }
+
+  &__list {
+    list-style: none;
+    padding-top: 5px;
+  }
+
+  &__list-item {
+    padding: 3px 5px;
+    font-size: 1.3rem;
+    color: #000;
+    font-weight: 500;
+
+    &:hover {
+      background-color: #eff0f1;
+    }
+  }
+}

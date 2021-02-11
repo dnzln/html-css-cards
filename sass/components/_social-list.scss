@@ -1,0 +1,19 @@
+.social-list {
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 11rem;
+
+  &__item {
+    svg {
+      width: 2.8rem;
+      max-height: 2.8rem;
+
+      &:hover {
+        fill: $soc-icon-hover-color;
+      }
+    }
+  }
+}

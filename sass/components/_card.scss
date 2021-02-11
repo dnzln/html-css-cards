@@ -1,0 +1,162 @@
+.card {
+  color: #fff;
+  font-family: Arial, sans-serif;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  perspective: 150rem;
+
+  &__side {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transition: all 0.5s ease;
+    background-color: #fff;
+
+    &_front {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+    }
+
+    &_back {
+      color: #000;
+      font-size: 2rem;
+      font-weight: 700;
+      padding: 2rem;
+      z-index: 1;
+      overflow: auto;
+    }
+  }
+
+  &_academy {
+    svg {
+      width: 40%;
+    }
+
+    @include rotateCard;
+  }
+
+  &_qa {
+    .card__side_front {
+      background-color: $card-qa-color;
+      font-size: 8rem;
+    }
+
+    @include rotateCard;
+  }
+
+  &_js {
+    .card__side_front {
+      color: #000;
+      background-color: $card-js-color;
+      font-size: 8rem;
+      font-weight: 700;
+      align-items: flex-end;
+      justify-content: flex-end;
+      padding-right: 20px;
+    }
+
+    @include rotateCard;
+  }
+
+  &_java {
+    .card__side_front {
+      background-color: $card-java-color;
+      font-size: 5rem;
+    }
+
+    &:hover .card__side_front {
+      height: 0;
+      font-size: 0;
+      bottom: 0;
+    }
+    &:not(:hover) .card__side_front {
+      bottom: 0;
+    }
+  }
+
+  &_net {
+    .card__side_front {
+      background-color: $card-net-color;
+      font-size: 8rem;
+    }
+
+    &:hover .card__side_front {
+      height: 0;
+      width: 0;
+      font-size: 0;
+      right: 0;
+      bottom: 0;
+    }
+    &:not(:hover) .card__side_front {
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  &_php {
+    .card__side_front {
+      color: #000;
+      background-color: $card-php-color;
+      font-size: 8rem;
+      font-style: italic;
+    }
+
+    &:hover .card__side_front {
+      height: 0;
+      width: 0;
+      font-size: 0;
+      right: 0;
+      top: 0;
+    }
+    &:not(:hover) .card__side_front {
+      right: 0;
+      top: 0;
+    }
+  }
+
+  &_events {
+    .card__side_front {
+      background-color: $card-events-color;
+      font-size: 1.8rem;
+    }
+
+    @include hideLeft;
+
+    .card__side_back {
+      font-size: 1.6rem;
+      font-weight: normal;
+    }
+  }
+
+  &_blog {
+    .card__side_front {
+      background-color: $card-blog-color;
+      font-size: 1.8rem;
+    }
+
+    @include hideLeft;
+
+    .card__side_back {
+      font-size: 1.6rem;
+      font-weight: normal;
+    }
+  }
+
+  &_contacts {
+    .card__side_front {
+      background-color: $card-contacts-color;
+      font-size: 1.8rem;
+    }
+
+    @include hideLeft;
+
+    .card__side_back {
+      font-size: 1.6rem;
+      font-weight: normal;
+    }
+  }
+}

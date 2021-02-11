@@ -1,0 +1,10 @@
+.footer {
+  height: $footer-height;
+  margin-top: $footer-height;
+  text-align: center;
+  &-copyright {
+    display: inline-block;
+    margin: 2rem;
+    font-weight: 500;
+  }
+}

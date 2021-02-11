@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>HTML CSS Task</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrapper header-wrapper">
+      <a href="#" class="logo">
+        <svg viewBox="0 0 348 102" class="logo">
+          <path
+            d="M17 77.7v-5.6c2.3 3.8 7.4 6.7 14 6.7 13.9 0 23.8-10.9 23.8-26.2 0-14.9-8.7-26-23.2-26-6.8 0-12.3 2.8-14.4 5.9V5H2.3v72.6H17zm22.6-24.9c0 8.3-5.3 12.4-11.2 12.4S17 61 17 52.8c0-8.4 5.4-12.3 11.3-12.3s11.3 3.8 11.3 12.3zm34.3 24.9V27.9H58.7v49.8h15.2zM95 49.1c0-5 3.2-8.7 8.2-8.7 5.5 0 8.1 3.7 8.1 8.6v28.7h15.2V46.4c0-10.9-5.6-19.9-18.2-19.9-5.1 0-11.2 2.3-13.9 7v-5.7H79.7v49.8H95V49.1zM130.4 64c0 7.9 6.3 15.1 17.2 15.1 6.6 0 11.4-2.8 14-7 0 3.4.4 5.2.5 5.6h13.7c-.1-.5-.6-3.8-.6-7.7V45.6c0-10.2-5.9-19.3-22.1-19.3-14.6 0-21.3 9.4-21.9 16.5l13.2 2.7c.3-3.7 3.2-7.3 8.5-7.3 4.8 0 7.3 2.5 7.3 5.4 0 1.7-.9 3-3.6 3.4l-11.7 1.8c-8 1.3-14.5 6.4-14.5 15.2zm22.4 4.1c-4.2 0-5.9-2.5-5.9-5.1 0-3.5 2.4-5 5.6-5.5l9.4-1.5v2.2c0 7.7-4.6 9.9-9.1 9.9zm59.5-40.2c-1-.3-2.5-.5-4-.5-4 0-10.3 1.6-12.9 7.2v-6.7h-14.8v49.8h15.2V56c0-9.9 5.5-13.5 11.6-13.5 1.5 0 3.1.1 4.8.5V27.9zm28.1 69l30.7-69H255l-11 26.7-12.2-26.7h-17l21 43.1-11.4 25.9h16z"
+            fill="#121212"></path>
+          <path fill="#f7991c" d="M73.9 24.8V9.5H58.6v15.3z"></path>
+          <path
+            d="M295.7 32.9c-.5-2.3-2.4-5.3-7.2-5.3-3.9 0-7 3-7 6.3 0 3.2 2.1 5.1 5.2 5.8l3 .7c2.1.4 3.2 1.8 3.2 3.3 0 1.8-1.4 3.4-4.4 3.4-3.2 0-4.9-2.2-5.1-4.5l-2.8.9c.4 3 2.8 6.3 7.9 6.3 4.5 0 7.3-3 7.3-6.3 0-3-2-5.2-5.5-5.9l-3.2-.7c-1.8-.4-2.7-1.6-2.7-3.1 0-2 1.7-3.5 4.1-3.5 3 0 4.2 2.1 4.5 3.6l2.7-1zm24.4-2.1v-2.7H303v2.7h7.1v18.4h2.9V30.8h7.1zM336 49.7c4.3 0 7.6-2.7 7.6-7.7V28.1h-2.9v13.8c0 3.2-1.7 5-4.7 5s-4.7-1.8-4.7-5V28.1h-2.9V42c0 5 3.3 7.7 7.6 7.7zM283.6 75V59h4.4c3.9 0 7.1 2.7 7.1 8s-3.3 7.9-7.2 7.9h-4.3zm4.4 2.6c5.4 0 10.1-3.6 10.1-10.5 0-7-4.7-10.6-10.1-10.6h-7.4v21.2h7.4zm25 0V56.4h-3v21.2h3zM328 67c0-5.5 3.7-8.3 7.6-8.3s7.6 2.8 7.6 8.3-3.7 8.4-7.6 8.4-7.6-2.9-7.6-8.4zm-3 0c0 7.1 5.3 11 10.6 11s10.6-4 10.6-11-5.3-11-10.6-11S325 59.9 325 67z"
+            fill="#b0b0b5"></path>
+        </svg>
+      </a>
+      <div class="notification">
+        <input type="checkbox" class="u-hidden notification-toggle" name="notification-toggle" id="notification-toggle">
+        <label for="notification-toggle" class="notification__bell" tabindex="1">
+          <svg id="Layer_4" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="18"
+            xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <path
+                d="m21.379 16.913c-1.512-1.278-2.379-3.146-2.379-5.125v-2.788c0-3.519-2.614-6.432-6-6.92v-1.08c0-.553-.448-1-1-1s-1 .447-1 1v1.08c-3.387.488-6 3.401-6 6.92v2.788c0 1.979-.867 3.847-2.388 5.133-.389.333-.612.817-.612 1.329 0 .965.785 1.75 1.75 1.75h16.5c.965 0 1.75-.785 1.75-1.75 0-.512-.223-.996-.621-1.337z" />
+              <path d="m12 24c1.811 0 3.326-1.291 3.674-3h-7.348c.348 1.709 1.863 3 3.674 3z" />
+            </g>
+          </svg>
+        </label>
+        <div class="notification__notification-block">
+          <ul class="notification__list">
+            <li class="notification__list-item">Notification one and moe info to you.</li>
+            <li class="notification__list-item">Notification two and it is it.</li>
+          </ul>
+        </div>
+      </div>
+      <nav class="menu">
+        <input type="checkbox" class="u-hidden menu-toggle" name="menu-toggle" id="menu-toggle">
+        <label for="menu-toggle" class="menu__profile" tabindex="1">
+          <span class="menu__profile-name">Daniil Tkalenko</span>
+        </label>
+        <div class="menu__menu-block">
+          <span class="menu__user-name">Daniil Tkalenko</span>
+          <ul class="menu__list">
+            <a href="#" class="list-">
+              <li class="menu__list-item">Profile</li>
+            </a>
+            <a href="#">
+              <li class="menu__list-item">Log out</li>
+            </a>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="cards-section">
+    <div class="wrapper cards-section-wrapper">
+      <div class="card card_academy">
+        <div class="card__side card__side_front">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <g fill="none" fill-rule="evenodd">
+              <path fill="#FFC712"
+                d="M59.927 76.881c.267.616-.427 1.205-.99.838L29.31 58.376c-2.259-1.299-1.743-3.772 0-4.526l16.585-6.125c.65-.24 1.37.07 1.647.703l12.386 28.453z" />
+              <path fill="#00ADEE"
+                d="M87.193 73.214L68.999 81.09c-1.16.503-2.546-.125-3.1-1.402L42.465 25.565c-.555-1.28-.061-2.726 1.101-3.23l18.193-7.876c1.16-.502 2.548.125 3.101 1.402l23.436 54.124c.554 1.28.06 2.726-1.102 3.23" />
+              <path fill="#EC1848"
+                d="M39.682 30.034c1.279 2.9 4.213 9.704 5.36 12.368a1.137 1.137 0 0 1-.646 1.516l-12.679 4.757a.678.678 0 0 1-.859-.904l7.633-17.73a.65.65 0 0 1 1.191-.007m.669 40.316l-13.924-9.294a1.066 1.066 0 0 0-1.567.46l-7.976 18.206c-.404.924.53 1.864 1.455 1.465l21.889-9.473a.78.78 0 0 0 .123-1.363" />
+              <path fill="#C22035"
+                d="M40.351 70.35l-13.924-9.294a1.066 1.066 0 0 0-1.567.46l9.402 12.78 5.966-2.582a.78.78 0 0 0 .123-1.363" />
+            </g>
+          </svg>
+        </div>
+        <div class="card__side card__side_back u-centred">
+          <button class="btn">Join</button>
+        </div>
+      </div>
+      <div class="card card_qa">
+        <div class="card__side card__side_front">QA</div>
+        <div class="card__side card__side_back">Advanced online course focusing on the finer points of QA</div>
+      </div>
+      <div class="card card_js">
+        <div class="card__side card__side_front">JS</div>
+        <div class="card__side card__side_back">An online intensive course on building web applications with JavaScript
+        </div>
+      </div>
+      <div class="card card_java">
+        <div class="card__side card__side_front">Java</div>
+        <div class="card__side card__side_back">Advanced online course on building web applications with Java</div>
+      </div>
+      <div class="card card_php">
+        <div class="card__side card__side_front">php</div>
+        <div class="card__side card__side_back">An online intensive course on building web applications with PHP</div>
+      </div>
+      <div class="card card_net">
+        <div class="card__side card__side_front">.NET</div>
+        <div class="card__side card__side_back">An online intensive course on building web applications with .NET</div>
+      </div>
+      <div class="card card_events">
+        <div class="card__side card__side_front">Events</div>
+        <div class="card__side card__side_back">
+          <p>
+            У березні-квітні відбулася серія наших онлайн трансляцій по веб-розробці
+            під кодовою назвою Homeference. Ми на деякий час залишимо посилання на запис трансляцій нижче. Дивись, шарь
+            з
+            друзями, а щоб не пропустити майбутні події -
+            підписуйся на телеграм Binary Studio Academy.
+          </p>
+        </div>
+      </div>
+      <div class="card card_blog">
+        <div class="card__side card__side_front">Blog</div>
+        <div class="card__side card__side_back">Ділимося інсайтами Академії, досвідом створення world-class проектів та
+          роздумами про життя, код, роботу.</div>
+      </div>
+      <div class="card card_contacts">
+        <div class="card__side card__side_front">Contacts</div>
+        <div class="card__side card__side_back u-no-overflow u-centred">
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a href="#">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 167.657 167.657"
+                  style="enable-background:new 0 0 167.657 167.657;" xml:space="preserve">
+                  <path d="M83.829,0.349C37.532,0.349,0,37.881,0,84.178c0,41.523,30.222,75.911,69.848,82.57v-65.081H49.626
+                    v-23.42h20.222V60.978c0-20.037,12.238-30.956,30.115-30.956c8.562,0,15.92,0.638,18.056,0.919v20.944l-12.399,0.006
+                    c-9.72,0-11.594,4.618-11.594,11.397v14.947h23.193l-3.025,23.42H94.026v65.653c41.476-5.048,73.631-40.312,73.631-83.154
+                    C167.657,37.881,130.125,0.349,83.829,0.349z" />
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="#">
+                <svg id="Bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m12 24c6.629 0 12-5.371 12-12s-5.371-12-12-12-12 5.371-12 12 5.371 12 12 12zm-6.509-12.26 11.57-4.461c.537-.194 1.006.131.832.943l.001-.001-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953z" />
+                </svg></a>
+            </li>
+            <li class="social-list__item">
+              <a href="#">
+                <svg height="511pt" viewBox="0 0 511 511.9" width="511pt" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0" />
+                  <path
+                    d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0" />
+                  <path
+                    d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0" />
+                </svg></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer"><span class="footer-copyright">&copy; Powered By Binary Studio Team</span></footer>
+
+  <div class="notices">
+    <div class="notice notice_type_error">
+      <p class="notice__title">Error</p>
+      <p class="notice__text">Something went wrong. Please try again later.</p>
+    </div>
+
+    <div class="notice notice_type_success">
+      <p class="notice__title">Success</p>
+      <p class="notice__text">Profile was updated.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>
