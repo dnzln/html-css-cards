@@ -25,11 +25,11 @@
 
   &_type_error {
     background-color: $notif-error-color;
-    background-image: url(../../img/error.svg);
+    background-image: url(../img/error.svg);
   }
 
   &_type_success {
     background-color: $notif-success-color;
-    background-image: url(../../img/success.svg);
+    background-image: url(../img/success.svg);
   }
 }
